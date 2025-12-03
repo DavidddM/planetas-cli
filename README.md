@@ -146,12 +146,12 @@ planetas ranges -p mars -g aries -s 2020-01-01 -e 2025-12-31 -f csv -o results.c
 planetas ranges -p moon -g cancer -s 2025-01-01 -e 2025-12-31 --system tropical
 ```
 
-### Minute-level precision
+### Day-level precision
 
-For more precise entry/exit times:
+To show only dates (without times):
 
 ```bash
-planetas --precision minute ranges -p venus -g taurus -s 2025-01-01 -e 2025-12-31
+planetas --precision day ranges -p venus -g taurus -s 2025-01-01 -e 2025-12-31
 ```
 
 ### List available options
@@ -182,8 +182,8 @@ planetas ranges --help
 
 | Option | Description |
 |--------|-------------|
-| `--precision day` | Day-level precision (default) |
-| `--precision minute` | Minute-level precision for sign ingress/egress times |
+| `--precision minute` | Minute-level precision (default) |
+| `--precision day` | Day-level precision (hides times in output) |
 
 ### Ayanamsa systems
 
@@ -195,11 +195,14 @@ For sidereal calculations, the following ayanamsa systems are supported:
 | `fagan_bradley` | Fagan-Bradley (Western Sidereal) |
 | `raman` | Raman |
 | `krishnamurti` | Krishnamurti (KP) |
+| `yukteshwar` | Yukteshwar |
+| `jn_bhasin` | JN Bhasin |
+| `deluce` | De Luce |
+| `sassanian` | Sassanian |
+| `galactic_center_0sag` | Galactic Center 0° Sagittarius |
 | `true_citra` | True Chitra |
 | `true_revati` | True Revati |
 | `true_pushya` | True Pushya |
-
-Use `planetas list-ayanamsas` for the complete list.
 
 ## Supported bodies
 

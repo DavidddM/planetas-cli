@@ -29,7 +29,7 @@ from .utils import (
 @click.option(
     "--precision",
     type=click.Choice(["day", "minute"]),
-    default="day",
+    default="minute",
     help="Output precision level.",
 )
 @click.pass_context
